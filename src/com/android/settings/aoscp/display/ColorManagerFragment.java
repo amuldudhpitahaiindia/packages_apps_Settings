@@ -46,7 +46,6 @@ public class ColorManagerFragment extends DashboardFragment implements RadioButt
     private static final String KEY_THEME_AUTO = "theme_auto";
     private static final String KEY_THEME_LIGHT = "theme_light";
     private static final String KEY_THEME_DARK = "theme_dark";
-    private static final String KEY_THEME_BLACK = "theme_black";
 
     private static final String KEY_SYSTEM_ACCENT = "system_accent";
 
@@ -98,9 +97,6 @@ public class ColorManagerFragment extends DashboardFragment implements RadioButt
             case 2:
                 updateThemeItems(KEY_THEME_DARK);
                 break;
-            case 3:
-                updateThemeItems(KEY_THEME_BLACK);
-                break;
         }
     }
 
@@ -135,10 +131,6 @@ public class ColorManagerFragment extends DashboardFragment implements RadioButt
             case KEY_THEME_DARK:
                 Settings.Secure.putInt(getContentResolver(),
                          Settings.Secure.SYSTEM_THEME, 2);
-                break;
-            case KEY_THEME_BLACK:
-                Settings.Secure.putInt(getContentResolver(),
-                         Settings.Secure.SYSTEM_THEME, 3);
                 break;
         }
         updateThemeItems(pref.getKey());

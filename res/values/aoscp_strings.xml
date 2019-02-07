@@ -34,7 +34,6 @@
     <string name="theme_auto_summary">Based on wallpaper</string>
     <string name="theme_light_title">Light</string>
     <string name="theme_dark_title">Dark</string>
-    <string name="theme_black_title">Black</string>
     <!-- Color Manager: Accents -->
     <string name="system_accent_default">Default</string>
     <string name="system_accent_blue">Blue</string>
